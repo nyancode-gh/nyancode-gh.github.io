@@ -1,0 +1,61 @@
+<link rel="stylesheet" type="text/css" href="css/mario.css">
+<title>css_mario</title>
+
+<body align="center">
+<h1>css-mario</h1>
+<div class="bg re">
+	<div class="m1-1 ab red w100 h20 le60 t0"></div>
+        <div class="m2-1 ab red w180 h20 le40 t20"></div>
+        <div class="m3-1 ab brown w140 h80 le40 t40"></div>
+        <div class="m3-2 ab hada w40 h20 le100 t40"></div>
+        <div class="m3-3 ab hada w20 h20 le160 t40"></div>
+        <div class="m4-1 ab brown w20 h60 le20 t60"></div>
+        <div class="m4-2 ab hada w20 h40 le40 t60"></div>
+        <div class="m4-3 ab hada w60 h20 le80 t60"></div>
+        <div class="m4-4 ab hada w60 h20 le160 t60"></div>
+        <div class="m5-1 ab hada w60 h20 le100 t80"></div>
+        <div class="m5-2 ab hada w60 h20 le180 t80"></div>
+        <div class="m6-1 ab hada w140 h40 le60 t100"></div>
+        <div class="m6-2 ab brown w80 h20 le140 t100"></div>
+        <div class="m8-1 ab brown w120 h80 le40 t140"></div>
+        <div class="m8-2 ab red w20 h40 le80 t140"></div>
+        <div class="m9-1 ab brown w60 h20 le20 t160"></div>
+        <div class="m9-3 ab red w20 h40 le140 t160"></div>
+        <div class="m9-4 ab brown w60 h20 le160 t160"></div>
+        <div class="m10-1 ab brown w80 h20 le0 t180"></div>
+        <div class="m10-2 ab red w60 h20 le80 t180"></div>
+        <div class="m10-3 ab brown w80 h20 le160 t180"></div>
+        <div class="m11-1 ab hada w240 h60 le0 t200"></div>
+        <div class="m11-2 ab brown w20 h20 le40 t200"></div>
+        <div class="m11-3 ab red w20 h20 le60 t200"></div>
+        <div class="m11-4 ab red w40 h60 le100 t200"></div>
+        <div class="m11-5 ab red w20 h20 le160 t200"></div>
+        <div class="m11-6 ab brown w20 h20 le180 t200"></div>
+        <div class="m12-1 ab red w120 h20 le60 t220"></div>
+        <div class="m13-1 ab red w60 h40 le40 t240"></div>
+        <div class="m13-2 ab red w60 h40 le140 t240"></div>
+        <div class="m15-1 ab brown w60 h20 le20 t280"></div>
+        <div class="m15-2 ab brown w60 h20 le160 t280"></div>
+        <div class="m16-1 ab brown w80 h20 le0 t300"></div>
+        <div class="m16-2 ab brown w80 h20 le160 t300"></div>
+</div>
+<form>
+<p>
+<input type="button" value="マリオになる" onclick="change(1)">
+<input type="button" value="ルイージになる" onclick="change(2)">
+</p>
+</form>
+<p><a href="index.html">top</a></p>
+<script src="jquery.js"></script> 
+<script>
+function change(c){
+	if(c==1){
+		$(".red").css("background-color","#f00");
+		$(".brown").css("background-color","#916d00");
+	}
+	if(c==2){
+		$(".red").css("background-color", "#fff");
+		$(".brown").css("background-color", "#1bb749");
+	}
+}
+</script>

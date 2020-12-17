@@ -9,12 +9,13 @@ p{
 a{
   text-decoration: none;
 }
-#main{
-  width:800px;
-  margin:0 auto 48px;
+main{
+  width:600px;
+  margin:0 auto 36px;
   padding:0 8px;
+  text-align:center;
 }
-#header, #footer{
+header, footer{
   background-color:#000;
 }
 h1{
@@ -23,17 +24,30 @@ h1{
   font-family: "Nico Moji";
   text-align: center;
   padding:24px;
+  margin:0;
 }
 h2{
   font-size: 32px;
   font-family: "Nico Moji";
-  border-bottom:1px solid #333;
-  width:160px;
+  margin:16px 0 0;
+  text-decoration:underline;
+  text-align:center;
 }
-#footer p{
-  font-size:0.8em;
+ul li{
+  list-style-type:none;
+}
+#about img{
+  background: #aaa;
+  border-radius: 50%;
+  border: 10px #fff double;
+}
+
+footer p{
   color: #fff;
   text-align:center;
   padding:16px;
   margin:0;
+}
+footer small{
+  font-size:.8em;
 }
