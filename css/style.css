@@ -33,6 +33,9 @@ h2{
   text-decoration:underline;
   text-align:center;
 }
+ul{
+  padding-left:0;
+}
 ul li{
   list-style-type:none;
 }
