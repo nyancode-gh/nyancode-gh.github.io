@@ -43,8 +43,11 @@ ul li{
   background: #aaa;
   border-radius: 50%;
   border: 10px #fff double;
+  transition: 1s ease;
 }
-
+#about img:hover{
+  transform: rotateY(360deg);
+}
 footer p{
   color: #fff;
   text-align:center;
