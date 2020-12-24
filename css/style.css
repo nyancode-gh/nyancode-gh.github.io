@@ -71,7 +71,7 @@ header ul li a:hover{
 }
 
 main{
-  margin:144px auto;
+  margin:112px auto;
 }
 h2{
   font-size: 88px;
@@ -82,11 +82,12 @@ h2{
 }
 #about, #contents, #dona{
   margin-bottom: 72px;
+  padding: 24px;
 }
 .about_box{
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 0 88px;
 }
 .img_box{
   margin-bottom: 32px;
