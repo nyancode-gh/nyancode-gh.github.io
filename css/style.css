@@ -1,13 +1,16 @@
 @charset "utf-8";
-
-body{
+html,body{
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  color:#ccc;
+}
+body{
   background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
   position: relative;
 }
 p{
-  font-size:16px;
+  font-size:1rem;
   color: #ccc;
 }
 a{
@@ -80,10 +83,11 @@ header ul li a:hover{
   color:#333;
 }
 main{
+  max-width:1080px;
   margin:0 auto;
 }
 section{
-  padding:128px;
+  padding:128px 0;
 }
 h2{
   color:#ccc;
@@ -143,23 +147,8 @@ footer small{
   font-size:0.8em;
 }
 
-/* 0-480pxの場合のデザイン*/
-@media screen and(max-width:1000px){
-  html, body{
-    width: 1000px;
-    font-size: 10%;
+@media screen and(mix-width:480px) {
+  header,header ul{
+    flex-direction: column;
   }
-  main{
-    margin: 48px auto;
-  }
-  section{
-    padding:24px;
-  }
-  .img_box{
-    text-align: center;
-  }
-  .about_box{
-    flex-direction:column;
-  }
-
 }
