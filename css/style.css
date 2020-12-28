@@ -1,41 +1,49 @@
+/* @font-face{
+  font-family: "DragonQuestFC";
+  src:url("../fonts/DragonQuestFC.ttf");
+} */
 body{
   padding: 0;
   margin: 0;
+  background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
 }
 p{
   font-size:16px;
-  color: #333;
+  color: #ccc;
 }
 a{
+  font-size: 16px;
+  color:greenyellow;
   text-decoration: none;
 }
+a:hover{
+  opacity:0.6;
+}
 ul{
+  color:#ccc;
   padding-left:0;
 }
 ul li{
   list-style-type:none;
 }
-
 header, footer{
   background-color:#000;
+  opacity: 0.6;
 }
-header#top_img{
-  background: #000;
-  background-image: url(../images/no_3950_bar.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+header{
+  width:100%;
+  position: fixed;
 }
 header .top_menu{
   background: #000;
+  opacity: 0.6;
   display: flex;
   justify-content:space-between;
-  opacity: 0.6;
 }
 header h1{
-  color:#fff;
+  color:#333;
+  font-family: "nicomoji";
   font-size: 48px;
-  font-family: "Nico Moji";
   margin: 0;
   padding: 16px;
 }
@@ -65,24 +73,21 @@ header ul li a{
 }
 header ul li a:hover{
   color:#333;
-  position: relative;
-  top:3px;
-  right: 3px;
 }
-
 main{
-  margin:112px auto;
+  width:1280px;
+  margin:0 auto;
+}
+section{
+  padding:128px;
 }
 h2{
-  font-size: 88px;
-  font-family: "Nico Moji";
+  color:#ccc;
+  font-family: "nicomoji";
+  font-size: 64px;
   margin:16px 0 0;
   padding-bottom: 54px;
   text-align:left;
-}
-#about, #contents, #dona{
-  margin-bottom: 72px;
-  padding: 24px;
 }
 .about_box{
   display: flex;
@@ -102,7 +107,13 @@ h2{
   transform: rotateY(360deg);
 }
 #about.message{
+  background: #000;
+  opacity: 0.8;
   padding: 32px;
+}
+#about.message p{
+  font-family: "DragonQuestFC";
+  font-size: 32px;
 }
 footer p{
   color: #fff;
@@ -111,5 +122,5 @@ footer p{
   margin:0;
 }
 footer small{
-  font-size:.8em;
+  font-size:0.8em;
 }
