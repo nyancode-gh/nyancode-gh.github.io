@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body{
   padding: 0;
   margin: 0;
@@ -22,6 +24,7 @@ ul{
 ul li{
   list-style-type:none;
 }
+
 .cursor{
   width: 48px;
   height: 48px;
@@ -63,24 +66,20 @@ header ul{
   padding: 0;
 }
 header ul li{
-  backgrount-color:transparent;
+  padding: 32px  3em;
   transition:0.5s ease-in-out;
 }
 header ul li:hover{
   background-color: #fff;
-  width: 100%;
 }
 header ul li a{
-  color:#fff;
   display: block;
-  padding: 32px  3em;
-  position: relative;
+  color:#fff;
 }
 header ul li a:hover{
   color:#333;
 }
 main{
-  width:1280px;
   margin:0 auto;
 }
 section{
@@ -91,8 +90,8 @@ h2{
   font-family: "Nico Moji";
   font-size: 64px;
   margin:16px 0 0;
-  padding-bottom: 54px;
-  text-align:left;
+  padding-bottom: 64px;
+  text-align:center;
 }
 section#first_view{
   padding: 0;
@@ -115,27 +114,24 @@ section#first_view{
   top:8px;
   transform:rotateY(360deg);
 }
-.about_box{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 88px;
-}
-.img_box{
-  margin-bottom: 32px;
+.about_box, .img_box{
+  margin-bottom: 48px;
+  text-align: center;
 }
 #about img{
   background: #aaa;
   border-radius: 50%;
   border: 10px #fff double;
-  transition: 1s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 #about img:hover{
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
-#about.message{
-  background: #000;
-  opacity: 0.8;
-  padding: 32px;
+.message{
+  padding: 24px;
+}
+#contents, #dona{
+  text-align:center;
 }
 footer p{
   color: #fff;
@@ -145,4 +141,25 @@ footer p{
 }
 footer small{
   font-size:0.8em;
+}
+
+/* 0-480pxの場合のデザイン*/
+@media screen and(max-width:1000px){
+  html, body{
+    width: 1000px;
+    font-size: 10%;
+  }
+  main{
+    margin: 48px auto;
+  }
+  section{
+    padding:24px;
+  }
+  .img_box{
+    text-align: center;
+  }
+  .about_box{
+    flex-direction:column;
+  }
+
 }
