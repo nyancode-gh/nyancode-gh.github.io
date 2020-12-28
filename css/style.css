@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
   background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
+  position: relative;
 }
 p{
   font-size:16px;
@@ -21,6 +22,18 @@ ul{
 ul li{
   list-style-type:none;
 }
+.cursor{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(#fff 1%,transparent 40%);
+  opacity:0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1001;
+}
 header, footer{
   background-color:#000;
   opacity: 0.6;
@@ -28,10 +41,6 @@ header, footer{
 header{
   width:100%;
   position: fixed;
-}
-header .top_menu{
-  background: #000;
-  opacity: 0.6;
   display: flex;
   justify-content:space-between;
 }
@@ -54,11 +63,12 @@ header ul{
   padding: 0;
 }
 header ul li{
-  transition: all 1s ease-in-out;
+  backgrount-color:transparent;
+  transition:0.5s ease-in-out;
 }
 header ul li:hover{
   background-color: #fff;
-  transform: rotateY(360deg);
+  width: 100%;
 }
 header ul li a{
   color:#fff;
@@ -83,6 +93,27 @@ h2{
   margin:16px 0 0;
   padding-bottom: 54px;
   text-align:left;
+}
+section#first_view{
+  padding: 0;
+}
+#first_view{
+  height:100vh;
+  text-align: center;
+  display: flex;
+}
+#first_view p{
+  margin:auto;
+}
+#first_view a{
+  font-size: 32px;
+  display: block;
+  transition:1s;
+}
+#first_view a:hover{
+  position:relative;
+  top:8px;
+  transform:rotateY(360deg);
 }
 .about_box{
   display: flex;
