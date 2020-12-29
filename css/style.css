@@ -1,10 +1,9 @@
 @charset "utf-8";
-
 html,body{
   padding: 0;
   margin: 0;
   font-size: 16px;
-  color:#ccc;
+  color:#eee;
 }
 body{
   background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
@@ -18,13 +17,12 @@ a:hover{
   opacity:0.6;
 }
 ul{
-  color:#ccc;
+  color:#eee;
   padding-left:0;
 }
 ul li{
   list-style-type:none;
 }
-
 .cursor{
   width: 48px;
   height: 48px;
@@ -67,8 +65,10 @@ header ul{
   padding: 0;
 }
 header ul li{
-  padding: 32px  3em;
+  padding: 32px  2em;
   transition:0.5s ease-in-out;
+  text-align: center;
+  width: 128px;
 }
 header ul li:hover{
   background-color: #fff;
@@ -96,7 +96,7 @@ section{
 h2{
   color:#ccc;
   font-family: "Nico Moji";
-  font-size: 4rem;
+  font-size: 3rem;
   margin:16px 0 0;
   padding-bottom: 64px;
   text-align:center;
@@ -142,9 +142,12 @@ section#first_view{
 #contents, #dona{
   text-align:center;
 }
+#dona ul{
+  font-size: .8rem;
+}
 footer p{
   text-align:center;
-  padding:16px;
+  padding:32px;
   margin:0;
 }
 footer small{
@@ -154,6 +157,9 @@ footer small{
 @media screen and (max-width: 767px) {
   header ul{
     flex-direction: column;
+  }
+  header ul li{
+    width: auto;
   }
   header ul li a{
     color: #333;
@@ -168,7 +174,7 @@ footer small{
     width: 30px;
     height: 22px;
     vertical-align: middle;
-    padding: 32px;
+    padding: 8px;
   }
   /*ハンバーガーアイコンをCSSだけで表現*/
   #nav-open span, #nav-open span:before, #nav-open span:after {
@@ -211,7 +217,7 @@ footer small{
     width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
-    background: #aaa;/*背景色*/
+    background: #ccc;/*背景色*/
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateY(-105%);
     transform: translateY(-105%);/*左に隠しておく*/
