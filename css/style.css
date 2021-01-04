@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 html,body,h1,h2,ul{
   padding: 0;
   margin: 0;
@@ -16,9 +17,10 @@ a{
 a:hover{
   opacity:0.6;
 }
-/* ul{
-  color:#eee;
-} */
+/* 変数 */
+:root{
+  --outer-height:100vh;
+}
 ul li{
   list-style-type:none;
 }
@@ -102,8 +104,8 @@ h2{
 section#first-view{
   padding: 0;
 }
-#first-view{
-  height:100vh;
+.first-view{
+  height: var(--outer-height);
   text-align: right;
   display: flex;
 }
@@ -150,6 +152,36 @@ footer p{
 }
 footer small{
   font-size:0.8em;
+}
+
+/* CSSアニメーションの指定 */
+.slide-top{
+  animation: slidein-top 2s;
+}
+.slide-left{
+  animation: slidein-left 2s;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes slidein-top {
+  0%{
+    opacity: 0;
+    transform:translateY(-128px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidein-left {
+  0%{
+    opacity: 0;
+    transform:translateX(-128px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /* 767pxより小さい時のスタイル */
 @media screen and (max-width: 767px) {
