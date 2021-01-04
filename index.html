@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="cursor"></div>
 <div class="follower"></div>
 
@@ -28,10 +27,9 @@
       </ul>
     </div>
   </nav>
-
   </header>
   <main>
-    <section id="first_view">
+    <section id="first-view">
       <p><a href="#about">スクロール→</p>
     </section>
     <section id="about">
@@ -41,14 +39,14 @@
       <ul>
         <li><a href="https://nyancode.blog">Blog</a></li>
         <li><a href="https://twitter.com/nyancode_tw">Twitter</a></li>
+        <li><a href="https://pinterest.com/nyancode_pin">pinterest</a></li>
         <li><a href="https://my.playstation.com/profile/nayncode_play">PlayStationNetwork</a></li>
       </ul>
       <div class="message">
-      <p>ここは「nyancode」のホームページです。<br>「にゃんこーど」とよみます。</p>
+      <p>ここは「nyancode」のホームページです<br>「にゃんこーど」とよみます。</p>
       <p>インターネットすなばなのでつくったものをおいたりしています<br>
           まだまだできたてなのでデザインがあれなホームページですが<br>
-          とりあえずゆっくりしていってね。
-      </p>
+          とりあえずゆっくりしていってね。</p>
       </div>
     </div>
   </section>
@@ -69,12 +67,16 @@
   </section>
   </main>
   <footer>
-    <p><small>
-      ©にゃんこーどのサイト
-      <script>document.write(new Date().getFullYear())</script>
-      All Rights Reserved.
-    </small></p>
+    <p><small>©にゃんこーどのサイト 2020-<script>document.write(new Date().getFullYear())</script> All Rights Reserved.</small></p>
   </footer>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () =>{
+  document.querySelectorAll('first-view')
+  .style.height = '${window.outerHeight}px'
+})
+</script>
+
 </body>
 </html>
