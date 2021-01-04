@@ -1,5 +1,8 @@
 @charset "utf-8";
-
+/* 変数 */
+:root{
+  --outer-height:100vh;
+}
 html,body,h1,h2,ul{
   padding: 0;
   margin: 0;
@@ -8,6 +11,7 @@ html,body,h1,h2,ul{
 }
 body{
   background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
+  height: var(--outer-height);
   position: relative;
 }
 a{
@@ -16,10 +20,6 @@ a{
 }
 a:hover{
   opacity:0.6;
-}
-/* 変数 */
-:root{
-  --outer-height:100vh;
 }
 ul li{
   list-style-type:none;
