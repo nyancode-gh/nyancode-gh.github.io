@@ -10,7 +10,7 @@ html,body,h1,h2,ul{
   color:#eee;
 }
 body{
-  background: url("../images/no_3950_bar.png") no-repeat right 100%/cover #000 fixed;
+  background: url("../images/no_3950_bar.png") no-repeat right #000 fixed;
   height: 100vh;
   position: relative;
 }
