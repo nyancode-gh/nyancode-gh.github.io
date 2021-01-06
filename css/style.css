@@ -11,7 +11,7 @@ html,body,h1,h2,ul{
 }
 body{
   background: url("../images/no_3950_bar.png") no-repeat 100%/cover #000 fixed;
-  height: var(--outer-height);
+  height: 100%;
   position: relative;
 }
 a{
@@ -66,7 +66,6 @@ header ul{
   padding: 0;
 }
 header ul li{
-  padding: 32px  2em;
   transition:0.5s ease-in-out;
   text-align: center;
 }
@@ -76,6 +75,7 @@ header ul li:hover{
 header ul li a{
   display: block;
   color:#fff;
+  padding: 32px  2em;
 }
 header ul li a:hover{
   color:#333;
@@ -104,7 +104,7 @@ h2{
 section#first-view{
   padding: 0;
 }
-.first-view{
+#first-view{
   height: var(--outer-height);
   text-align: right;
   display: flex;
@@ -245,8 +245,8 @@ footer small{
     left: 0;
     z-index: 9999;/*最前面に*/
     width: 70%;/*右側に隙間を作る（閉じるカバーを表示）*/
-    max-width: 300px;/*最大幅（調整してください）*/
-    height: 50%;
+    max-width: 320px;/*最大幅（調整してください）*/
+
     background: #ccc;/*背景色*/
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateY(-105%);
