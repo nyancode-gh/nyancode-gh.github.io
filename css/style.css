@@ -11,7 +11,7 @@ html,body,h1,h2,ul{
 }
 body{
   background: url("../images/no_3950_bar.png") no-repeat right #000 fixed;
-  height: 100vh;
+
   position: relative;
 }
 a{
