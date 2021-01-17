@@ -6,7 +6,7 @@
   <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 </head>
 <body>
-  <a-scene fog="type: linear; color:#ffc0cb; far:15; near:0">
+  <a-scene fog="type: linear; color:#ffc0cb; far:20; near:0">
     <!-- リソースロード遅延軽減 -->
     <a-assets>
       <img src="images/yumekawa_tile.png" id="tile">
@@ -24,8 +24,8 @@
     <a-entity>
       <a-gltf-model src="#neko" scale="4 4 4" position="-6 3 -6" rotation="0 45 0"></a-gltf-model>
       <a-gltf-model src="#neko" scale="4 4 4" position="6 5 -6" rotation="0 -45 0"></a-gltf-model>
-      <a-gltf-model src="#neko" scale="4 4 4" position="16 0 0" rotation="0 90 0"></a-gltf-model>
-      <a-gltf-model src="#neko" scale="4 4 4" position="-20 3 6" rotation="0 240 0"></a-gltf-model>
+      <a-gltf-model src="#neko" scale="4 4 4" position="15 0 0" rotation="0 -90 0"></a-gltf-model>
+      <a-gltf-model src="#neko" scale="4 4 4" position="-15 3 6" rotation="0 90 0"></a-gltf-model>
       <a-gltf-model src="#neko" scale="4 4 4" position="0 3 10" rotation="0 180 0"></a-gltf-model>
     </a-entity>
   </a-scene>
