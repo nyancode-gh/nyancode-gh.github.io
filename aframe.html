@@ -12,7 +12,7 @@
       <!-- リソースロード遅延軽減 -->
       <a-assets>
         <img src="images/yumekawa_tile.png" id="tile">
-        <a-asset-item id="neko" src="images/neko.gltf">
+        <a-asset-item id="neko" src="neko.glb">
       </a-assets>
       <a-camera position="0 5 0"></a-camera>
       <a-image src="#tile" rotation="90 0 0" scale="30 30 30" position="0 0 0"></a-image>
@@ -23,13 +23,7 @@
       <a-sphere position="0 2 12" radius="1.25" color="#ff8"></a-sphere>
       <a-sphere position="4 5 6" radius="1.25" color="#ff8"></a-sphere>
 
-      <a-gltf-model="#neko" scale="0.3 0.3 0.3">
-        <!-- <a-collada-model src="#neko" rotation="0 -90 0" position="0 5 -10"></a-collada-model>
-        <a-collada-model src="#neko" rotation="0 -180 0" position="10 3 0"></a-collada-model>
-        <a-collada-model src="#neko" rotation="0 90 0" position="0 3 10"></a-collada-model>
-        <a-collada-model src="#neko" rotation="0 0 0" position="0 5 -20"></a-collada-model>
-        <a-collada-model src="#neko" rotation="0 -45 0" position="-10 3 0"></a-collada-model> -->
-      </a-gltf-model>
+      <a-gltf-model="#neko" scale="1 1 1"></a-gltf-model>
     </a-scene>
   </body>
 </html>
