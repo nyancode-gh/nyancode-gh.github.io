@@ -4,27 +4,32 @@
     <meta charset="utf-8">
     <title>yumekawaii-kukan</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <!-- aframe-extras読み込み -->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene fog="type: linear; color:#ffc0cb; far:15; near:0">
       <!-- リソースロード遅延軽減 -->
       <a-assets>
         <img src="images/yumekawa_tile.png" id="tile">
-        <!-- <a-asset-item id="neko" src="neko.gltf"> -->
+        <a-asset-item id="neko" src="neko.gltf">
       </a-assets>
-      <a-camera position="0 6 0"></a-camera>
+      <a-camera position="0 5 0"></a-camera>
       <a-image src="#tile" rotation="90 0 0" scale="30 30 30" position="0 0 0"></a-image>
       <a-sky color="#ffc0cb"></a-sky>
 
       <a-sphere position="0 2 -12" radius="1.25" color="#ff8"></a-sphere>
-      <a-sphere position="4 4 -6" radius="1.25" color="#ff8"></a-sphere>
-      <!-- <a-entity gltf-model="#neko" scale="0.03 0.03 0.03">
-        <a-collada-model src="#neko" rotation="0 -90 0" position="0 5 -10"></a-collada-model>
+      <a-sphere position="4 5 -6" radius="1.25" color="#ff8"></a-sphere>
+      <a-sphere position="0 2 12" radius="1.25" color="#ff8"></a-sphere>
+      <a-sphere position="4 5 6" radius="1.25" color="#ff8"></a-sphere>
+
+      <a-entity gltf-model="#neko" scale="0.03 0.03 0.03">
+        <!-- <a-collada-model src="#neko" rotation="0 -90 0" position="0 5 -10"></a-collada-model>
         <a-collada-model src="#neko" rotation="0 -180 0" position="10 3 0"></a-collada-model>
         <a-collada-model src="#neko" rotation="0 90 0" position="0 3 10"></a-collada-model>
         <a-collada-model src="#neko" rotation="0 0 0" position="0 5 -20"></a-collada-model>
-        <a-collada-model src="#neko" rotation="0 -45 0" position="-10 3 0"></a-collada-model>
-      </a-entity> -->
+        <a-collada-model src="#neko" rotation="0 -45 0" position="-10 3 0"></a-collada-model> -->
+      </a-entity>
     </a-scene>
   </body>
 </html>
