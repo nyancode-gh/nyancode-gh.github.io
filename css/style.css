@@ -35,7 +35,7 @@ img {
   writing-mode: vertical-lr;
   position: fixed;
   top: 50%;
-  left: 16px;
+  left: 8px;
   z-index: 1;
 }
 section {
@@ -61,7 +61,11 @@ section {
 /* ABOUT
 --------------------- */
 .about {
-  height: 100vh;
+  height: auto;
+}
+.about-info {
+  display: flex;
+  justify-content: center;
 }
 .about h2 {
   letter-spacing: .4em;
@@ -71,26 +75,28 @@ section {
   content: "";
   display: block;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 70%, rgb(247, 247, 72) 30%);
-  width: 100%;
+  width: 32%;
   height: 1em;
-  margin-top: -16px;
+  margin: -30px auto 30px;
 }
-.about p{
+.about p, .about ul{
   text-align: left;
   width: 368px;
   border: solid 1px #000;
   box-shadow: 5px 5px #000;
   padding: 4px;
 }
+.about ul li {
+  text-align: left;
+  line-height: 1.7;
+}
 rt {
   letter-spacing: .2em;
   font-size: .6rem;
 }
 .me, .skill{
-  display: flex;
-  justify-content: space-between;
   padding: 24px 0;
-  margin: 0 10% 32px;
+  margin: 0 2% 32px;
 }
 /* WORKS
 --------------------- */
@@ -193,13 +199,18 @@ rt {
   .about h2 {
     margin:0 auto 1.4em;
   }
+  .about h2::after {
+    margin-top: -18px;
+  }
   .about p, .skill div{
     margin: 0 auto;
-    border: none;
   }
   .me, .skill {
     flex-direction: column;
     margin: 0 auto;
+  }
+  .about-info {
+    flex-direction: column;
   }
   .items {
     margin: 0;
