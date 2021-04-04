@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-
 * {
   color: #333;
   text-align: center;
@@ -8,81 +7,144 @@ h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 4rem;
   width: 100%;
+  margin-bottom: 16px;
 }
 h2 {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 2rem;
+  margin-bottom: 12px;
+}
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
 }
 p {
   font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+}
+img {
+  width: 100%;
 }
 .wrap {
   overflow: auto;
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
+.scroll {
+  color:#000;
+  writing-mode: vertical-lr;
+  position: fixed;
+  top: 50%;
+  left: 16px;
+  z-index: 1;
+}
 section {
-  height: 100vh;
+  padding: 64px 8px;
   scroll-snap-align: start;
   position: relative;
 }
+/* トップ
+--------------------- */
 .header {
+  height: 100vh;
   background-color: #f8f8f8;
 }
 .header h1 {
   position: absolute;
-  top: 30%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-image: linear-gradient(45deg, #fff 30%, #ccc 30%, #ccc 50%, #fff 50%, #fff 80%, #ccc 80%, #ccc 100%);
+  background-size: 4px 4px;
+  padding: 16px 0;
 }
+/* ABOUT
+--------------------- */
 .about {
-}
-.about h1{
-  padding-top :.8em;
+  height: 100vh;
 }
 .about h2 {
   letter-spacing: .4em;
   text-align: center;
-  margin-bottom: 1.4em;
+}
+.about h2::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(rgba(255, 255, 255, 1) 70%, rgb(247, 247, 72) 30%);
+  width: 100%;
+  height: 1em;
+  margin-top: -16px;
+}
+.about p{
+  text-align: left;
+  width: 368px;
+  border: solid 1px #000;
+  box-shadow: 5px 5px #000;
+  padding: 4px;
 }
 rt {
-  letter-spacing: .1em;
-  font-size: .8rem;
+  letter-spacing: .2em;
+  font-size: .6rem;
 }
-.me {
+.me, .skill{
   display: flex;
   justify-content: space-between;
-  padding: 2em .8em;
+  padding: 24px 0;
+  margin: 0 10% 32px;
 }
-.me p {
-  text-align: left;
-}
+/* WORKS
+--------------------- */
 .works {
+  height: auto;
   background-color: #f8f8f8;
-}
-.works h1{
-  padding-top :.8em;
 }
 .items {
   display: flex;
-  justify-content: space-between;
-  padding: 2em .8em;
-  width: 100%;
+  padding: 24px 0;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  margin:0 4%;
+  position: relative;
 }
 .item {
-  width: 49%;
-  background-color: rgb(213, 216, 216);
-}
-.item img {
+  flex-shrink: 0;
   width: 100%;
-  vertical-align: baseline;
-  height: 200px;
-  background-color: rgb(131, 139, 137);
+  max-width: 512px;
+  scroll-snap-align: center;
+  margin:0 4% 0 0;
+  padding: 8px;
+  border: solid 2px #000;
+  box-shadow: 0 8px #000;
+  position: relative;
 }
+.item:hover, .item:active {
+  opacity: .7;
+  transform: translateY(8px);
+  box-shadow: none;
+}
+.cat {
+  font-size: .8rem;
+  background-color: #ff6;
+  padding:4px;
+  position: absolute;
+  top: -12px;
+  border: solid 1px #4e4e4e;
+  box-shadow: 3px 3px;
+  transform: rotate3d(1, 1, 1, -11.25deg);
+}
+.item-info {
+  padding: 8px;
+  text-align: left;
+}
+.item-info h3 {
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+/* CONTACT
+--------------------- */
 .contact {
-}
-.contact h1 {
-  padding-top :.8em;
+  height: 100vh;
 }
 .contact small {
   position: absolute;
@@ -91,27 +153,33 @@ rt {
   transform: translateX(-50%);
 }
 .icons {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .icons a {
-  transition :1s; 
+  transition :.5s; 
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 8px 16px;
   padding: 24px;
   border: 1px solid;
   border-radius: 50%;
 }
-
-/* ここから */
-.icons fa-twitter:hover {
+.icons .fa-twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.icons .fa-envelope:hover {
+  color: #fff;
+  background-color: #333;
 }
 .fa {
   padding: 0 8px;
 }
-
+/* 800以下の時
+--------------------- */
 @media (max-width: 800px) {
   h1 {
     font-size: 3rem;
@@ -119,14 +187,22 @@ rt {
   h2 {
     font-size: 1.2rem;
   }
+  h3 {
+    font-size: 1.125rem;
+  }
   .about h2 {
-    margin-bottom: 1.4em;
+    margin:0 auto 1.4em;
   }
-  .me {
-    flex-direction: column;
-  }
-  .me p {
+  .about p, .skill div{
     margin: 0 auto;
+    border: none;
+  }
+  .me, .skill {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .items {
+    margin: 0;
   }
   .item {
     margin-bottom: 2em;
