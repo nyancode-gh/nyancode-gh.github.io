@@ -1,7 +1,11 @@
 @charset 'UTF-8';
-* {
+/* 共通 */
+* { 
   color: #333;
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
 h1 {
   font-family: 'Abril Fatface', cursive;
@@ -27,66 +31,73 @@ img {
 }
 .wrap {
   overflow: auto;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y proximity; */
   height: 100vh;
-}
-.scroll {
-  color:#000;
-  writing-mode: vertical-lr;
-  position: fixed;
-  top: 50%;
-  left: 8px;
-  z-index: 1;
 }
 section {
   padding: 64px 8px;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   position: relative;
 }
 /* トップ
 --------------------- */
-.header {
+#header {
   height: 100vh;
   background-color: #f8f8f8;
+  padding-left: 0;
+  padding-right: 0;
 }
-.header h1 {
-  position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#header h1 {
   background-image: linear-gradient(45deg, #fff 30%, #ccc 30%, #ccc 50%, #fff 50%, #fff 80%, #ccc 80%, #ccc 100%);
   background-size: 4px 4px;
-  padding: 16px 0;
+  padding: 24px 0;
+  margin-top: 4%;
+}
+#header ul {
+  display: flex;
+  justify-content: center;
+}
+#header ul li {
+  padding: 2%;
+  margin: 16% 0;
+}
+#header ul li a{
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+}
+.scroll {
+  display: none;
 }
 /* ABOUT
 --------------------- */
-.about {
+#about {
   height: auto;
 }
 .about-info {
   display: flex;
   justify-content: center;
 }
-.about h2 {
+#about h2 {
   letter-spacing: .4em;
   text-align: center;
 }
-.about h2::after {
+#about h2::after {
   content: "";
   display: block;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 70%, rgb(247, 247, 72) 30%);
-  width: 32%;
+  width: 40%;
   height: 1em;
   margin: -30px auto 30px;
 }
-.about p, .about ul{
+#about p, #about ul{
   text-align: left;
   width: 368px;
   border: solid 1px #000;
   box-shadow: 5px 5px #000;
   padding: 4px;
 }
-.about ul li {
+#about ul li {
   text-align: left;
   line-height: 1.7;
 }
@@ -100,7 +111,7 @@ rt {
 }
 /* WORKS
 --------------------- */
-.works {
+#works {
   height: auto;
   background-color: #f8f8f8;
 }
@@ -123,7 +134,10 @@ rt {
   box-shadow: 0 8px #000;
   position: relative;
 }
-.item:hover, .item:active {
+.item:hover{
+  opacity: .7;
+}
+.item:active {
   opacity: .7;
   transform: translateY(8px);
   box-shadow: none;
@@ -149,10 +163,10 @@ rt {
 }
 /* CONTACT
 --------------------- */
-.contact {
+#contact {
   height: 100vh;
 }
-.contact small {
+#contact small {
   position: absolute;
   bottom:8px;
   left: 50%;
@@ -184,6 +198,16 @@ rt {
 .fa {
   padding: 0 8px;
 }
+.top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 4%;
+  right: 6%;
+}
+.top a {
+  display: block;
+}
 /* 800以下の時
 --------------------- */
 @media (max-width: 800px) {
@@ -196,14 +220,31 @@ rt {
   h3 {
     font-size: 1.125rem;
   }
-  .about h2 {
+  #header ul li {
+    margin: 8% 0;
+  }
+  #header ul li a{
+    font-size: 1.1rem;
+  }
+  .scroll {
+    display: block;
+    border: 1px solid;
+    margin: 4% auto;
+    width: 200px; 
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+  }
+  #about h2 {
     margin:0 auto 1.4em;
   }
-  .about h2::after {
+  #about h2::after {
     margin-top: -18px;
+    width: 30%;
   }
-  .about p, .skill div{
+  #about p, #about ul{
     margin: 0 auto;
+    width: 100%;
   }
   .me, .skill {
     flex-direction: column;
