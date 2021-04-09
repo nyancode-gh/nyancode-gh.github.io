@@ -4,80 +4,96 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://unpkg.com/destyle.css@2.0.2/destyle.css">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>masayuki fujita portfolio</title>
 	<script src="https://kit.fontawesome.com/0c3f4b533e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="wrap">
-	<section id="header">
-		<h1>masayuki fujita<br>portfolio</h1>
-		<ul>
-			<li><a href="#about">about</a>
-			<li><a href="#works">works</a>
-			<li><a href="#contact">contact</a>
-		</ul>
-		<p class="scroll">SCROLL</p>
-	</section>
-	<section id="about">
-		<h1>about me</h1>
-		<div class="about-info">
-		<div class="me">
-			<h2><ruby><rb>藤田雅幸</rb><rt>ふじた&ensp;まさゆき</rt></ruby></h2>
-			<p>
-				1988年生まれ。滋賀県出身、岐阜在住。<br>
-				プログラミングやデザインに興味があります。<br>
-				IT・WEB業界で働くことを目指して学習中です。<br>
-				どうぞよろしくお願いします。
-			</p>
-		</div>
-		<div class="skill">
-			<h2><ruby><rb>スキル</rb><rt>できること</rt></h2>
+	<!-- header -->
+	<header id="header">
+		<h1>Masayuki<br>Fujita<br>Portfolio<a href="#">.</a></h1>
+		<nav>
 			<ul>
-				<li>HTML / CSS
-				<li>JavaScript(jQuery)
-				<li>PHP / MySQL
-				<li>XD / Illustrator / Photoshop
-				<li>Git / Github
+				<li><a href="#about">about</a>
+				<li><a href="#works">works</a>
+				<li><a href="#contact">contact</a>
+			</ul>
+		</nav>
+		<!-- <div id="cube"></div> -->
+	</header>
+	<!-- about -->
+	<section id="about">
+		<h1>About me</h1>
+		<div class="me-info inner">
+			<div class="profile">
+				<h2><ruby><rb>藤田雅幸</rb><rt>ふじた&ensp;まさゆき</rt></ruby></h2>
+				<p>1988年生まれ。滋賀県出身、岐阜在住。プログラミングやデザインに興味があり、IT・WEB業界で働くことを目標に学習中です。将来的には、関わってくださる全ての皆様のビジネスの成功をお手伝いできるような技術者として成長し、社会に貢献し続けられる働き方を目指します。</p>
+			</div>
+			<div class="skill">
+				<h2><ruby><rb>スキル</rb><rt>できること</rt></h2>
+				<p><i class="fas fa-code"></i> HTML5 / CSS3 / JavaScript(jQuery) / PHP / MySQL</p>
+				<p><i class="fas fa-palette"></i> XD / Illustrator / Photoshop</p>
+				<p><i class="fas fa-tools"></i> Git / Github</p>
+			</div>
+		</div>
+	</section>
+	<!-- works -->
+	<section id="works">
+		<h1>Works</h1>
+		<div class="items inner">
+			<div class="item">
+				<a href="#" class="item-img"><img src="images/yka_thm.jpg" alt=""></a>
+				<div class="item-info">
+					<h2>株式会社YKA - Webサイト</h2>
+					<small><i class="fas fa-tags"></i> Design / HTML / CSS / JS(JQuery) / PHP(独自CMSの設定)</small>
+					<p>職業訓練校のWebデザイナー科の制作実習で、ホームページリニューアルのお手伝いをさせて頂きました。チームでの制作で、私は主にトップページのコーディングやレスポンシブ化、デザインカンプやバナーの制作を担当しました。</p>
+					<p>介護事業を営む企業様でしたので、実際にサービスを受けるご家族やご利用者様が、見やすくて使いやすいと思ってもらえるようなデザインを意識し、コーディングにおいてはHTML5の規約に基づき、チームメンバーに伝わりやすい適切でシンプルなマークアップを心掛けました。</p>
+					<small><a href="#">URL:</a><br>※無料サーバーでのテスト版の為、表示崩れや読み込みの遅延等が発生致します。</small>
+				</div>
+			</div>
+			<!-- にゃんこーどブログ -->
+			<div class="item">
+				<a href="#" class="item-img"><img src="images/blog_thm.jpg" alt=""></a>
+				<div class="item-info">
+					<h2>猫標識 - BLOG</h2>
+					<small><i class="fas fa-tags"></i> Design / Word Press / CSS</small>
+					<p>後学のためと、発信の場が欲しいとの事で、にゃんこーど様（私）のブログをWordPressで制作致しました。サーバー・ドメインの契約から、必要なプラグインの導入、広告やアクセス解析等の各種設定、テーマのカスタマイズまで担当しました。</p>
+					<p>デザインは、クライアント様のイメージカラーである黒をベースに、明朝フォントで高級感を演出し、カラム数やコンテンツの幅などCSSにて調整を行い、細かなニーズにも対応致しました。</p>
+					<small><a href="#">URL:</a></small>
+				</div>
+			</div>
+			<!-- 新型コロナ -->
+			<div class="item">
+				<a href="#" class="item-img"><img src="images/c19_banner_thm.jpg" alt=""></a>
+				<div class="item-info">
+					<h2>COVID-19対応策バナー</h2>
+					<small><i class="fas fa-tags"></i> Design (Adobe XD)</small>
+					<p>新型コロナウイルスの感染防止対応についてのバナーを作成致しました。かわいいオリジナルのピクトグラムがポイントです。</p>
+					<p>必要な方は、下記リンクからご自由にダウンロードしてお使いくださいませ。著作権は放棄しておりませんが、改変、利用についての報告は不要です。ファイル形式はXDとなっております。</p>
+					<small><a href="#">URL:</a></small>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- contact -->
+	<section id="contact">
+		<h1>Contact</h1>
+		<div class="links inner">
+			<p>このサイトのご感想や、何か問題がありましたら下記の連絡先へお気軽にお問い合わせくださいませ。</p>
+			<ul>
+				<li><a href="#" class="fa fa-envelope"> Gmail</a>
+				<li><a href="#" class="fa fa-twitter"> Twitter</a>
+				<li><a href="#" class="fa fa-wordpress"> Blog</a>
 			</ul>
 		</div>
-	</div>
 	</section>
-	<section id="works">
-		<h1>works</h1>
-		<div class="items">
-			<a href="works.html#yka" class="item">
-				<div class="cat">WEBサイト</div>
-				<img src="images/yka_thm.jpg" alt="">
-				<div class="item-info">
-					<h3>株式会社YKA様 / WEBサイト</h3>
-					<small><i class="fas fa-tags"></i>&ensp;HTML / CSS / jQuery / 独自CMSの埋め込み / レスポンシブ対応 / ワイヤーフレーム デザイン バナー作成</small>  
-				</div>
-		</a>
-			<div class="item">
-				<a href="#"><img src="" alt=""></a>
-				<p>ここに説明。個々に説明</p>
-			</div>
-			<div class="item">
-				<a href="#"><img src="" alt=""></a>
-				<p>ここに説明。個々に説明</p>
-			</div>
-			<div class="item">
-				<a href="#"><img src="" alt=""></a>
-				<p>ここに説明。個々に説明</p>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<h1>contact</h1>
-		<div class="icons">
-			<a href="#" class="fa fa-twitter fa-4x"></i>
-			<a href="#" class="fa fa-envelope fa-4x"></a>
-		</div>
+	<!-- footer -->
+	<footer>
 		<small>&copy; masayuki fujita portfolio</small>
-	</section>
-	<a class="top fas fa-chevron-up fa-3x" href="#header"></a>
+		<a class="page-top fas fa-chevron-up fa-3x" href="#"></a>
+	</footer>
 	<script src="js/main.js"></script>
 </body>
 </html>
