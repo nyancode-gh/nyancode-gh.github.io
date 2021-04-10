@@ -270,6 +270,9 @@ footer small {
     height: 8px;
     bottom: -8px;
   }
+  rb {
+    letter-spacing: 16px;
+  }
   /* works */
   .item {
     margin-bottom: 64px;
