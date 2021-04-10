@@ -98,16 +98,6 @@ section p {
 #header ul li a:hover::after {
   transform: scale(1, 1);
 }
-#cube{
-  width: 880px;
-  height: 880px;
-  transform: rotate(45deg) translate(320px);
-  background-image: linear-gradient(0deg, #fff 30%, #ccc 30%, #ccc 50%, #fff 50%, #fff 80%, #ccc 80%, #ccc 100%);
-  background-size: 4px 4px;
-  position: absolute;
-  top: 0%;
-  right: 0px;
-}
 /* --------------------- about --------------------- */
 #about {
   background-color: var(--base-color2);
