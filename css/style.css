@@ -44,6 +44,7 @@ section h1 {
 }
 section p {
   font-size: 1.5rem;
+  margin-bottom: 24px;
 }
 .inner {
   max-width: 1120px;
@@ -63,7 +64,10 @@ section p {
 }
 #header h1 span{
   display: block;
-} 
+}
+#header h1 span>span {
+  display: inline;
+}
 #header nav {
   position: absolute;
   bottom: 80px;
@@ -86,7 +90,7 @@ section p {
 #header ul li a::after {
   content: "";
   width: 100%;
-  height: 2px;
+  height: 4px;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -105,6 +109,7 @@ section p {
 #about h2 {
   display: inline-block;
   position: relative;
+  text-indent: 0.5em;
 }
 #about h2::after {
   content: "";
@@ -123,7 +128,7 @@ rt {
   text-align: center;
 }
 .profile, .skill {
-  margin-bottom: 80px;
+  margin-bottom: 104px;
 }
 /* --------------------- works --------------------- */
 #works {
@@ -169,7 +174,6 @@ rt {
 }
 .item-info p {
   font-size: 18px;
-  margin-bottom: 24px;
 }
 /* --------------------- contact --------------------- */
 #contact {
@@ -183,14 +187,11 @@ rt {
   font-weight: normal;
   line-height: 1.7;
 }
-.fa-envelope:hover {
-  color: var(--ac-color);
+.fa-envelope:hover, .fa-wordpress:hover {
+  color: var(--font-color2);
 }
 .fa-twitter:hover {
   color: #1da1f2;
-}
-.fa-wordpress:hover {
-  color: var(--font-color2);
 }
 /* --------------------- footer --------------------- */
 footer {

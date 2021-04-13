@@ -27,7 +27,7 @@
 		<h1>
 			<span class="animate__animated animate__fadeInLeft animate__delay-0.5s animate__slow">Masayuki</span>
 			<span class="animate__animated animate__fadeInLeft animate__delay-1s animate__slow">Fujita</span>
-			<span class="animate__animated animate__fadeInLeft animate__delay-2s animate__slow">Portfolio<a href="#">.</a></span>
+			<span class="animate__animated animate__fadeInLeft animate__delay-2s animate__slow">Portfolio<span onclick="jsGame()">.</span></span>
 		</h1>
 		<nav class="animate__animated animate__fadeInUp animate__delay-4s">
 			<ul>
@@ -43,13 +43,18 @@
 		<div class="me-info inner">
 			<div class="profile">
 				<h2><ruby><rb>藤田雅幸</rb><rt>ふじた&ensp;まさゆき</rt></ruby></h2>
-				<p>1988年生まれ。滋賀県出身、岐阜在住。プログラミングやデザインに興味があり、IT・WEB業界で働くことを目標に学習中です。将来的には、関わってくださる全ての皆様のビジネスの成功をお手伝いできるような技術者として成長し、社会に貢献し続けられる働き方を目指します。</p>
+				<p>1988年生まれ。滋賀県出身、岐阜在住。プログラミングやデザインが好きです。<span id="viewToday"></span>現在は、IT・WEB業界で働くことを目標にスキルを磨いたりお仕事を探したりしています。将来的には、関わってくださる全てのみなさまの成功をお手伝いできるような一人の人間として成長し、末長く社会に貢献し続けられる働き方を目指します。</p>
 			</div>
 			<div class="skill">
-				<h2><ruby><rb>スキル</rb><rt>できること</rt></h2>
-				<p><i class="fas fa-code"></i> HTML5 / CSS3 / JavaScript(jQuery) / PHP / MySQL</p>
-				<p><i class="fas fa-palette"></i> XD / Illustrator / Photoshop</p>
-				<p><i class="fas fa-tools"></i> Git / Github</p>
+				<h2><ruby><rb>スキル</rb><rt>できる？こと</rt></h2>
+				<p>どちらかといえばコーディングが得意で、保守管理のしやすい丁寧なマークアップを心がけています。表現の幅を広げるために、デザイン力やプログラミングの学習も継続しています。趣味はイラストを描いたりすることで、ごく稀に活動しています。</p>
+				<div class="skill-set">
+					<p>
+						<i class="fas fa-code"></i> HTML5 / CSS3 / JavaScript(jQuery) / PHP / MySQL<br>
+						<i class="fas fa-palette"></i> XD / Illustrator / Photoshop<br>
+						<i class="fas fa-tools"></i> Git / Word Press
+					</p>	
+				</div>
 			</div>
 		</div>
 	</section>
@@ -62,9 +67,9 @@
 				<div class="item-info">
 					<h2>株式会社YKA - Webサイト</h2>
 					<small><i class="fas fa-tags"></i> Design / HTML / CSS / JS(JQuery) / PHP(独自CMSの設定)</small>
-					<p>職業訓練校のWebデザイナー科の制作実習で、ホームページリニューアルのお手伝いをさせて頂きました。チームでの制作で、私は主にトップページのコーディングやレスポンシブ化、デザインカンプやバナーの制作を担当しました。</p>
+					<p>職業訓練校のWebデザイナー科の制作実習で、ホームページリニューアルのお手伝いをさせて頂きました。4人のチームで、私は主にトップページのコーディング、レスポンシブ、デザイン、バナーの制作を担当しました。</p>
 					<p>介護事業を営む企業様でしたので、実際にサービスを受けるご家族やご利用者様が、見やすくて使いやすいと思ってもらえるようなデザインを意識し、コーディングにおいてはHTML5の規約に基づき、チームメンバーに伝わりやすい適切でシンプルなマークアップを心掛けました。</p>
-					<small>URL <a href="http://kunren0118.php.xdomain.jp/t1_kaigo/demoyka/index.php">http://kunren0118.php.xdomain.jp/t1_kaigo/demoyka/index.php</a><br>※無料サーバーでのテスト版の為、表示崩れや読み込みの遅延等が発生致します。</small>
+					<small>URL：<a href="http://kunren0118.php.xdomain.jp/t1_kaigo/demoyka/index.php">http://kunren0118.php.xdomain.jp/t1_kaigo/demoyka/index.php</a><br>※無料サーバーでのデモ版の為、表示崩れや読み込みの遅延等が発生する場合がございます。</small>
 				</div>
 			</div>
 			<div class="item">
@@ -72,9 +77,9 @@
 				<div class="item-info">
 					<h2>猫標識 - BLOG</h2>
 					<small><i class="fas fa-tags"></i> Design / Word Press / CSS</small>
-					<p>後学のためと、発信の場が欲しいとの事で、にゃんこーど様（私）のブログをWordPressで制作致しました。サーバー・ドメインの契約から、必要なプラグインの導入、広告やアクセス解析等の各種設定、テーマのカスタマイズまで担当しました。</p>
+					<p>にゃんこーど様（私）のブログをWordPressで制作致しました。サーバー・ドメインの契約から、必要なプラグインの導入、広告やアクセス解析等の各種設定、テーマのカスタマイズを担当しました。</p>
 					<p>デザインは、クライアント様のイメージカラーである黒をベースに、明朝フォントで高級感を演出し、カラム数やコンテンツの幅などCSSにて調整を行い、細かなニーズにも対応致しました。</p>
-					<small>URL <a href="https://nyancode.blog">https://nyancode.blog</a></small>
+					<small>URL：<a href="https://nyancode.blog">https://nyancode.blog</a></small>
 				</div>
 			</div>
 			<div class="item">
@@ -83,8 +88,8 @@
 					<h2>COVID-19対応策バナー</h2>
 					<small><i class="fas fa-tags"></i> Design (Adobe XD)</small>
 					<p>新型コロナウイルスの感染防止対応についてのバナーを作成致しました。かわいいオリジナルのピクトグラムがポイントです。</p>
-					<p>必要な方は、下記リンクからご自由にダウンロードしてお使いくださいませ。著作権は放棄しておりませんが、改変、利用についての報告は不要です。ファイル形式はXDとなっております。</p>
-					<small>URL <a href="https://nyancode-gh.github.io/dist/c19_banner.xd">https://nyancode-gh.github.io/dist/c19_banner.xd</a></small>
+					<p>必要な方は、下記リンクからご自由にダウンロードしてお使いくださいませ。著作権は放棄しておりませんが、改変、利用についての報告は不要です。ファイル形式はXD、サイズは横幅1100pxとなっております。</p>
+					<small>URL：<a href="https://nyancode-gh.github.io/dist/c19_banner.xd">https://nyancode-gh.github.io/dist/c19_banner.xd</a><br>※上記URLをおすとダウンロードできます。</small>
 				</div>
 			</div>
 		</div>
@@ -93,7 +98,7 @@
 	<section id="contact">
 		<h1>Contact</h1>
 		<div class="links inner">
-			<p>このサイトのご感想や、何か問題がありましたら下記の連絡先へお気軽にお問い合わせくださいませ。</p>
+			<p>「このサイトいい感じですね」や「がんばってください」などのご感想や、何か問題等がございましたら下記の連絡先へお気軽にお問い合わせくださいませ。</p>
 			<ul>
 				<li><a href="mailto:bizmfujita&#64;gmail.com" class="fa fa-envelope"> Gmail</a>
 				<li><a href="https://twitter.com/nyancode_tw" class="fa fa-twitter"> Twitter</a>
