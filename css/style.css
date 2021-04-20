@@ -46,6 +46,12 @@ section p {
   font-size: 1.5rem;
   margin-bottom: 24px;
 }
+.wrap {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 .inner {
   max-width: 1120px;
   margin: 0 auto;
@@ -53,6 +59,8 @@ section p {
 }
 /* --------------------- header --------------------- */
 #header {
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100vh;
   background-color: var(--base-color1);
   display: flex;
@@ -65,13 +73,10 @@ section p {
 #header h1 span{
   display: block;
 }
-#header h1 span>span {
-  display: inline;
-}
 #header nav {
   position: absolute;
   bottom: 80px;
-  right: 96px;
+  right: 64px;
   z-index: 1;
 }
 #header ul {
@@ -205,10 +210,9 @@ footer small {
 }
 .page-top{
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   position: absolute;
-  bottom: 80px;
   right:64px;
 }
 .page-top:hover {
