@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 :root {
   --base-color1: #fff;
   --base-color2: #f9f9f9;
@@ -19,8 +19,6 @@ html {
 h1 {
   font-family: 'Lexend', sans-serif;
   font-size: 9rem;
-  margin-left: 64px;
-  margin-bottom: 64px;
 }
 h2 {
   font-family: 'Noto Sans JP', sans-serif;
@@ -35,22 +33,19 @@ img {
   width: 100%;
 }
 section {
-  padding: 112px 0;
+  padding: 112px 0 56px;
   position: relative;
 }
 section h1 {
   color: var(--base-color1);
   -webkit-text-stroke: 1px var(--main-color);
+  max-width: 1280px;
+  margin:0 auto 64px;
+  padding-left: 24px;
 }
 section p {
   font-size: 1.5rem;
   margin-bottom: 24px;
-}
-.wrap {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 .inner {
   max-width: 1120px;
@@ -164,17 +159,18 @@ rt {
   font-size: 2rem;
   margin-bottom: 16px;
 }
-.item-info small {
+.item-info small, address {
   display: block;
   word-wrap:break-word;
   color: var(--font-color2);
   margin-bottom: 24px;
+  font-size: .8rem;
   line-height: 1.7;
 }
-.item-info small a {
+.item-info small a, address a{
   text-decoration: underline;
 }
-.item-info small a:hover {
+.item-info small a:hover, address a:hover {
   opacity: .6;
 }
 .item-info p {
@@ -185,6 +181,9 @@ rt {
   background-color: var(--base-color2);
 }
 .links p {
+  margin-bottom: 54px;
+}
+.links ul {
   margin-bottom: 54px;
 }
 .links ul li a.fa {
@@ -234,7 +233,6 @@ footer small {
 }
 /* --------------------- 800以下の時 --------------------- */
 @media (max-width: 800px) {
-  /* 共通 */
   h1{
     font-size: 4rem;
     margin-left: 4%;
@@ -245,10 +243,13 @@ footer small {
   .inner {
     padding: 0 24px;
   }
+  section h1 {
+    text-align: center;
+    padding: 0;
+  }
   section p {
     font-size: 1rem;
   }
-  /* header */
   #header {
     flex-direction: column;
     align-items: normal;
@@ -260,7 +261,6 @@ footer small {
     position: static;
     margin: 152px auto 0;
   }
-  /* about */
   #about h2::after {
     height: 8px;
     bottom: -8px;
@@ -268,7 +268,6 @@ footer small {
   rb {
     letter-spacing: 16px;
   }
-  /* works */
   .item {
     margin-bottom: 64px;
   }
@@ -278,7 +277,6 @@ footer small {
   .item-info p {
     font-size: 1rem;
   }
-  /* footer */
   footer small{
     margin-left: 4%;
   }
